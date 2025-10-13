@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tool-json-processing"
+version = "0.0.0"
+description = "Add your description here"
+dependencies = [
+    "langchain==0.3.7",
+    "pydantic",
+    "json-repair==0.30.0",
+    "jsonpath-ng==1.7.0",
+    "numpy==1.26.4",
+    "requests==2.32.2",
+    "PyYAML==6.0.2",
+    "types-pyyaml==6.0.12.20240917",
+    "tenacity",
+    "typing-extensions",
+    "json_repair",
+    "langchain-community==0.3.1",
+    "tqdm",
+    "openai>=1.68.2",
+    "ollama==0.4.2",
+    "langchain-ollama",
+    "langchain-openai",
+    "openai",
+    "fire",
+    "transformers",
+    "sentence_transformers",
+    "pint"
+]
+authors = [
+    { name = "Kiran Kate", email = "kakate@us.ibm.com" },
+    { name = "Yara Rizk", email = "yara.rizk@ibm.com" }
+]
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.mypy]
+exclude = "(examples|typings)"
+follow_imports = "normal"
+
+disallow_untyped_calls = true
+warn_return_any = true
+strict_optional = false
+warn_no_return = true
+warn_unused_ignores = true
+disallow_any_generics = true
+no_implicit_optional = true
+warn_unreachable = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+
+[tool.setuptools.packages.find]
+include = ["codegen_scripts*", "experimental_scripts*", "generate_qa_pairs*"]
+
+[tool.setuptools.package-data]
+"codegen_scripts" = ["*.py"]
+"experimental_scripts" = ["*.py"]
+"generate_qa_pairs" = ["*.py"]
+
+
