@@ -1,6 +1,6 @@
 # JSON Processor
 
-This is the repo for the paper [How Good Are LLMs at Processing Tool Outputs?]()
+This is the repo for the paper [How Good Are LLMs at Processing Tool Outputs?](https://arxiv.org/pdf/2510.15955)
 
 ## Quick Start
 
