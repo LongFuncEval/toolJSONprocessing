@@ -1,0 +1,338 @@
+
+        {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "API response schema for product shoes.",
+        "type": "object",
+        "properties": {
+            "status": {
+            "type": "string"
+            },
+            "request_id": {
+            "type": "string"
+            },
+            "data": {
+            "type": "object",
+            "properties": {
+                "products": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                    "product_id": {
+                        "type": "string"
+                    },
+                    "product_title": {
+                        "type": "string"
+                    },
+                    "product_description": {
+                        "type": "string"
+                    },
+                    "product_photos": {
+                        "type": "array",
+                        "items": {
+                        "type": "string"
+                        }
+                    },
+                    "product_attributes": {
+                        "type": "object",
+                        "properties": {
+                        "Size": {
+                            "type": "string"
+                        },
+                        "Brand": {
+                            "type": "string"
+                        },
+                        "Width": {
+                            "type": "string"
+                        },
+                        "Material": {
+                            "type": "string"
+                        },
+                        "Color": {
+                            "type": "string"
+                        },
+                        "Style": {
+                            "type": "string"
+                        },
+                        "Outsole Material": {
+                            "type": "string"
+                        },
+                        "Department": {
+                            "type": "string"
+                        },
+                        "Athletic Style": {
+                            "type": "string"
+                        },
+                        "Closure Style": {
+                            "type": "string"
+                        },
+                        "For Athletics": {
+                            "type": "string"
+                        },
+                        "Care Instructions": {
+                            "type": "string"
+                        },
+                        "Support Type": {
+                            "type": "string"
+                        },
+                        "Fashion Sneaker": {
+                            "type": "string"
+                        },
+                        "Type": {
+                            "type": "string"
+                        },
+                        "High-top": {
+                            "type": "string"
+                        },
+                        "Season": {
+                            "type": "string"
+                        },
+                        "Embellishment Style": {
+                            "type": "string"
+                        },
+                        "Breathable": {
+                            "type": "string"
+                        },
+                        "Lining Material": {
+                            "type": "string"
+                        },
+                        "Reflective": {
+                            "type": "string"
+                        },
+                        "For Orthotics": {
+                            "type": "string"
+                        },
+                        "With Composite Toe": {
+                            "type": "string"
+                        },
+                        "Static Dissipative": {
+                            "type": "string"
+                        },
+                        "Slip Resistant": {
+                            "type": "string"
+                        },
+                        "EH Rated": {
+                            "type": "string"
+                        },
+                        "Moisture Wicking": {
+                            "type": "string"
+                        },
+                        "Work": {
+                            "type": "string"
+                        },
+                        "Weight": {
+                            "type": "string"
+                        },
+                        "Toe Shape": {
+                            "type": "string"
+                        },
+                        "Gender": {
+                            "type": "string"
+                        },
+                        "Category": {
+                            "type": "string"
+                        }
+                        },
+                        "required": [
+                        "Size",
+                        "Width"
+                        ]
+                    },
+                    "product_rating": {
+                        "type": "number"
+                    },
+                    "product_page_url": {
+                        "type": "string"
+                    },
+                    "product_offers_page_url": {
+                        "type": "string"
+                    },
+                    "product_specs_page_url": {
+                        "type": "string"
+                    },
+                    "product_reviews_page_url": {
+                        "type": "string"
+                    },
+                    "product_page_url_v2": {
+                        "type": "string"
+                    },
+                    "product_num_reviews": {
+                        "type": "number"
+                    },
+                    "product_num_offers": {
+                        "type": "string"
+                    },
+                    "typical_price_range": {
+                        "type": "array",
+                        "items": {
+                        "type": "string"
+                        }
+                    },
+                    "product_variant_properties": {
+                        "type": "object",
+                        "properties": {
+                        "Size": {
+                            "type": "string"
+                        },
+                        "Color": {
+                            "type": "string"
+                        },
+                        "Width": {
+                            "type": "string"
+                        }
+                        },
+                        "required": [
+                        "Size"
+                        ]
+                    },
+                    "product_variants": {
+                        "type": "object",
+                        "properties": {
+                        "Size": {
+                            "type": "array",
+                            "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                "type": "string"
+                                }
+                            },
+                            "required": [
+                                "value"
+                            ]
+                            }
+                        },
+                        "Color": {
+                            "type": "array",
+                            "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                "type": "string"
+                                },
+                                "product_id": {
+                                "type": "string"
+                                },
+                                "thumbnail": {
+                                "type": "string"
+                                }
+                            },
+                            "required": [
+                                "value"
+                            ]
+                            }
+                        },
+                        "Width": {
+                            "type": "array",
+                            "items": {
+                            "type": "object",
+                            "properties": {
+                                "value": {
+                                "type": "string"
+                                }
+                            },
+                            "required": [
+                                "value"
+                            ]
+                            }
+                        }
+                        },
+                        "required": [
+                        "Size"
+                        ]
+                    },
+                    "offer": {
+                        "type": "object",
+                        "properties": {
+                        "offer_id": {
+                            "type": "string"
+                        },
+                        "offer_page_url": {
+                            "type": "string"
+                        },
+                        "price": {
+                            "type": "string"
+                        },
+                        "shipping": {
+                            "type": "string"
+                        },
+                        "on_sale": {
+                            "type": "boolean"
+                        },
+                        "original_price": {
+                            "type": "string"
+                        },
+                        "product_condition": {
+                            "type": "string"
+                        },
+                        "store_name": {
+                            "type": "string"
+                        },
+                        "store_rating": {
+                            "type": "string"
+                        },
+                        "store_review_count": {
+                            "type": "number"
+                        },
+                        "store_reviews_page_url": {
+                            "type": "string"
+                        },
+                        "store_favicon": {
+                            "type": "string"
+                        },
+                        "coupon_discount_percent": {
+                            "type": "string"
+                        },
+                        "payment_methods": {
+                            "type": "string"
+                        }
+                        },
+                        "required": [
+                        "offer_id",
+                        "offer_page_url",
+                        "price",
+                        "shipping",
+                        "on_sale",
+                        "product_condition",
+                        "store_name",
+                        "store_rating",
+                        "store_review_count",
+                        "store_reviews_page_url",
+                        "store_favicon",
+                        "payment_methods"
+                        ]
+                    }
+                    },
+                    "required": [
+                    "product_id",
+                    "product_title",
+                    "product_photos",
+                    "product_attributes",
+                    "product_page_url",
+                    "product_offers_page_url",
+                    "product_specs_page_url",
+                    "product_reviews_page_url",
+                    "product_page_url_v2",
+                    "product_num_offers",
+                    "offer"
+                    ]
+                }
+                },
+                "sponsored_products": {
+                "type": "array",
+                "items": {}
+                }
+            },
+            "required": [
+                "products",
+                "sponsored_products"
+            ]
+            }
+        },
+        "required": [
+            "status",
+            "request_id",
+            "data"
+        ]
+        }    
+    

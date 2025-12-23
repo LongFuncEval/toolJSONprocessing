@@ -1,0 +1,119 @@
+
+    {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "Response schema for the SEC filings endpoint.",
+        "type": "object",
+        "properties": {
+            "meta": {
+            "type": "object",
+            "properties": {
+                "copyright": {
+                "type": "string"
+                },
+                "terms": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+                }
+            },
+            "required": [
+                "copyright",
+                "terms"
+            ]
+            },
+            "data": {
+            "type": "object",
+            "properties": {
+                "attributes": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                    "type": "number"
+                    },
+                    "company": {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                        "type": "string"
+                        },
+                        "cik": {
+                        "type": "string"
+                        },
+                        "ticker": {
+                        "type": "string"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "cik",
+                        "ticker"
+                    ]
+                    },
+                    "count": {
+                    "type": "number"
+                    },
+                    "result": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "accessionNumber": {
+                            "type": "string"
+                        },
+                        "filingDate": {
+                            "type": "string"
+                        },
+                        "formType": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        },
+                        "period": {
+                            "type": "string"
+                        }
+                        },
+                        "required": [
+                        "name",
+                        "accessionNumber",
+                        "filingDate",
+                        "formType",
+                        "url"
+                        ]
+                    }
+                    }
+                },
+                "required": [
+                    "status",
+                    "company",
+                    "count",
+                    "result"
+                ]
+                },
+                "type": {
+                "type": "string"
+                },
+                "id": {
+                "type": "string"
+                }
+            },
+            "required": [
+                "attributes",
+                "type",
+                "id"
+            ]
+            },
+            "status": {
+            "type": "boolean"
+            }
+        },
+        "required": [
+            "meta",
+            "data",
+            "status"
+        ]
+    }
