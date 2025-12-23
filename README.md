@@ -2,6 +2,8 @@
 
 This is the repo for the paper [How Good Are LLMs at Processing Tool Outputs?](https://arxiv.org/pdf/2510.15955)
 
+This work was also integrated into the Agent Lifecycle Toolkit ([ALTK](https://agenttoolkit.github.io/agent-lifecycle-toolkit/concepts/components/json-processor/)) and [Langflow](https://www.youtube.com/watch?v=gEo28uaeHv8). 
+
 ## Quick Start
 
 ### Local install:
